@@ -1,0 +1,232 @@
+/* =============== GLOBAL =============== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =============== BODY =============== */
+body {
+    background-color: #222222;
+}
+
+/* =============== SIDEBAR =============== */
+.sidebar {
+    width: 60px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: #222;
+    color: #fff;
+    border-right: 1px solid #cacaca;
+
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+
+    z-index: 2;
+}
+
+.sidebar:hover {
+    width: 180px;
+}
+
+/* =============== LOGO =============== */
+
+.sidebar__logo {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.sidebar:hover .sidebar__logo {
+    transition: transform 0.9s;
+    transform: rotateY(360deg);
+    color: #e77d03;
+    transition: ease-in-out 0.9s;
+}
+
+/* =============== ITEM =============== */
+
+.sidebar__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+    padding: 12px 16px;
+    width: 100%;
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+.sidebar__item:hover {
+    background: #ffffff1a;
+}
+
+.sidebar__item-icon {
+    width: 24px;
+    text-align: center;
+    font-size: 20px;
+    flex-shrink: 0;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar:hover .sidebar__item-icon {
+    position: static;
+    transform: none;
+}
+
+.sidebar__item-text {
+    margin-left: 12px;
+    white-space: nowrap;
+
+    max-width: 0;
+    overflow: hidden;
+
+    transition: max-width 0.3s ease;
+}
+
+.sidebar:hover .sidebar__item-text {
+    max-width: 120px;
+}
+
+/* =============== USER AUTH =============== */
+.sidebar__user-auth {
+    bottom: 0;
+    margin-top: auto;
+    position: sticky;
+
+    font-weight: bolder;
+}
+
+/* =============== HEADER =============== */
+.header {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    position: sticky;
+    top: 0;
+
+    justify-content: flex-end;
+    gap: 10px;
+
+    border-bottom: solid 1px #575757;
+    background: #222;
+
+    transition: transform 0.6s ease;
+    z-index: 1;
+}
+
+.header--hidden {
+    transform: translateY(-100%);
+}
+
+/* =============== SEARCH =============== */
+.header__search {
+    width: 20%;
+    margin: auto;
+
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: solid 1px #cacaca;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    gap: 10px;
+    cursor: pointer;
+}
+
+.header__search-input {
+    width: 100%;
+    height: 100%;
+
+    background: transparent;
+    outline: none;
+    border: none;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #cacaca;
+}
+
+.header__search-icon {
+    padding-right: 10px;
+    color: #cacaca;
+}
+
+/* =============== BUTTON =============== */
+.btn {
+    padding: 10px;
+
+    cursor: pointer;
+
+    background-color: #222;
+    color: #cacaca;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    align-items: center;
+    text-align: center;
+
+    border: solid 1px #cacaca;
+    border-radius: 25px;
+}
+
+.btn__icon {
+    padding-right: 5px;
+}
+
+.btn:hover {
+    color: #222;
+    background: #cacaca;
+
+    transition: ease 0.6s;
+    transform: scale(1.1);
+}
+
+/* =============== CONTENT =============== */
+.content__text {
+    padding: 0 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: #cacaca;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =============== FOOTER =============== */
+.footer {
+    height: 10vh;
+    width: 100%;
+
+    background: #222;
+    border-top: solid 1px #575757;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: static;
+    bottom: 1;
+    gap: 10px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: #cacaca;
+}
