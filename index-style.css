@@ -33,15 +33,12 @@ p {
     z-index: 10;
 
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
 
     background: #0b0c1a;
     transition: ease 0.9s;
-}
-
-.logo {
-    /* margin-right: auto; */
 }
 
 .header img {
@@ -50,7 +47,8 @@ p {
 }
 
 .header-right-section {
-    /* margin-left: auto; */
+    display: flex;
+    flex-direction: row;
 }
 
 .header-right-section a {
@@ -453,3 +451,4 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
