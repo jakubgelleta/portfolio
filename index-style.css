@@ -266,7 +266,7 @@ p {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 
-    box-shadow: inset 0 0 15px rgbargb(111, 31, 240, 0.507);
+    box-shadow: inset 0 0 15px rgba(111, 31, 240, 0.507);
 
     overflow: hidden;
 }
