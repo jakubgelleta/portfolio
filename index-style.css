@@ -5,11 +5,6 @@
 
 /* RESET */
 
-html, body {
-    height: 100%;
-    /* background: #0b0c1a; */
-}
-
 body {
     margin: 0;
     padding: 0;
