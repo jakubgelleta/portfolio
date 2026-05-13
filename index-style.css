@@ -457,5 +457,9 @@ p {
         grid: 1;
         grid-template-columns: 1fr;
     }
+
+    .buttons {
+        max-width: 700px;
+    }
 }
 
