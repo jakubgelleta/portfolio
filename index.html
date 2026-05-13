@@ -190,6 +190,7 @@
                 </div>
 
                 <script>
+                    
                     document.addEventListener("DOMContentLoaded", () => {
 
                         let lastScroll = 0;
@@ -198,15 +199,6 @@
                         window.addEventListener("scroll", () => {
 
                             const currentScroll = window.pageYOffset;
-                            const threshold = 10;
-
-                            if (currentScroll <= 0) {
-                                topbar.classList.remove("header--hidden");
-                                lastScroll = 0;
-                                return;
-                            }
-
-                            if (Math.abs(currentScroll - lastScroll) < threshold) return;
 
                             if (currentScroll > lastScroll) {
                                 topbar.classList.add("header--hidden");
@@ -220,6 +212,7 @@
                         console.log(document.querySelector(".header"));
 
                     });
+                    
                 </script>
                 
 
