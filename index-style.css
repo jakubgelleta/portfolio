@@ -176,6 +176,9 @@ p {
 
 .contact-button:hover {
     background: #f5f5f5;
+}
+
+.contact-button a:hover {
     color: #000;
 }
 
