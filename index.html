@@ -198,12 +198,15 @@
                         window.addEventListener("scroll", () => {
 
                             const currentScroll = window.pageYOffset;
+                            const threshold = 10;
 
                             if (currnentScroll <= 0) {
                                 topbar.classList.remove("header--hidden");
                                 lastScroll = 0;
                                 return;
                             }
+
+                            if (Math.abs(currentScroll - lastScroll) < threshold) return;
 
                             if (currentScroll > lastScroll) {
                                 topbar.classList.add("header--hidden");
