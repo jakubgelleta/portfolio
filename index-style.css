@@ -5,6 +5,10 @@
 
 /* RESET */
 
+html {
+    background-color: #0b0c1a;
+}
+
 body {
     margin: 0;
     padding: 0;
