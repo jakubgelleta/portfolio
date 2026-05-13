@@ -16,6 +16,7 @@ body {
 
     background: url("background.png");
     background-size: cover;
+    background-color: #0b0c1a;
 }
 
 p {
