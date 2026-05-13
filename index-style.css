@@ -163,18 +163,15 @@ p {
     border: solid 1px #f5f5f5;
     background: transparent;
 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+
     transition: ease 0.9s;
     cursor: pointer;
 }
 
 .contact-button a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #f5f5f5;
-
-    transition: ease 0.9s;
     text-decoration: none;
-
-    cursor: pointer;
 }
 
 .contact-button:hover {
@@ -182,11 +179,6 @@ p {
     background: #f5f5f5;
 
     transition: ease 0.9s;
-}
-
-.contact-button a:hover {
-    color: #000;
-}
 
 /* HERO */
 
