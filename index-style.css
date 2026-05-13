@@ -38,7 +38,8 @@ p {
     align-items: center;
 
     background: #0b0c1a;
-    transition: ease 0.9s;
+    transition: transform 0.6s ease;
+    will-change: transform;
 }
 
 .header img {
