@@ -357,8 +357,6 @@ p {
 
     display: flex;
     flex: 1;
-
-    border: 2px solid red;
     
     justify-content: center;
     align-items: center;
@@ -453,6 +451,13 @@ p {
     .projects-row {
         grid: 1;
         grid-template-columns: 1fr;
+    }
+
+    .footer {
+        margin-top: auto;
+
+        display: flex;
+        flex: 1;
     }
 }
 
