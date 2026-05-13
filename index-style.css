@@ -260,8 +260,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
 
-    border: 1px solid;
-    border-image: linear-gradient(to left, rgb(240, 90, 31), rgb(111, 31, 240));
+    border: 1px solid rgb(240, 90, 31);
     border-radius: 20px;
 
     backdrop-filter: blur(16px);
