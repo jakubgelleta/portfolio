@@ -173,6 +173,8 @@ p {
 
     transition: ease 0.9s;
     text-decoration: none;
+
+    cursor: pointer;
 }
 
 .contact-button:hover {
