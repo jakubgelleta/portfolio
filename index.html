@@ -200,6 +200,12 @@
 
                             const currentScroll = window.pageYOffset;
 
+                            if (currentScroll <= 0) {
+                                topbar.classList.remove("header--hidden");
+                                lastScroll = 0;
+                                return;
+                                }
+
                             if (currentScroll > lastScroll) {
                                 topbar.classList.add("header--hidden");
                             } else {
