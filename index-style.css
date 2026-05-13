@@ -356,6 +356,10 @@ p {
     margin-top: auto;
 
     display: flex;
+    flex: 1;
+
+    outline: 2px solid red;
+    
     justify-content: center;
     align-items: center;
     gap: 10px;
