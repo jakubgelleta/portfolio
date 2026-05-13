@@ -163,10 +163,15 @@ p {
     border: solid 1px #f5f5f5;
     background: transparent;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
     transition: ease 0.9s;
     cursor: pointer;
+}
+
+.contact-button a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+
+    text-decoration: none;
 }
 
 .contact-button:hover {
