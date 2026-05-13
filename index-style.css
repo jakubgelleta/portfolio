@@ -326,7 +326,7 @@ p {
     justify-content: center;
     align-items: center;
 
-    background: rgb(255, 106, 0);
+    background: linear-gradient(to left, rgb(240, 90, 31), rgb(111, 31, 240));
     border-radius: 50%;
 
     transition: filter 0.6s;
